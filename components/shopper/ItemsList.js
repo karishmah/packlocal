@@ -9,20 +9,21 @@ export default class ItemsList extends Component {
 
   render() {
     return (
-      <FlatList 
-        data={this.props.source}
-        renderItem={({item}) => (
-          <View style={styles.container}>
-            <Image style={styles.image} source={{uri: item.image}} />
-            <Text style={styles.title}>{item.title}</Text>
-            <Text style={styles.options}>{item.options}</Text>
-            <Text style={styles.rating}>{item.rating}</Text>
-            <Text style={styles.price}> ${item.price}</Text>
-          </View>
-        )}
-        keyExtractor={(item, index) => index}
-        numColumns={numColumns}
-      />
+      <View style={styles.list}>
+        <FlatList
+          data={this.props.source}
+          renderItem={({item}) => (
+            <View style={styles.container}>
+              <Image style={styles.image} source={{uri: item.image[0]}} />
+              <Text style={styles.title}>{item.title}</Text>
+              <Text style={styles.options}>{item.options}</Text>
+              <Text style={styles.price}> ${item.price}</Text>
+            </View>
+          )}
+          keyExtractor={(item, index) => index}
+          numColumns={numColumns}
+        />
+      </View>
       
     );
   }
@@ -32,31 +33,34 @@ const numColumns = 2;
 const size = Dimensions.get('window').width/numColumns;
 
 const styles = StyleSheet.create({
+  list:{
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   container:{
-    width: size,
-    height: size,
-    padding: 10,
-    backgroundColor: 'blue',
-    flex: 1,
-    flexDirection: 'row'
+    width: size*0.9,
+    height: size*1.8,
+    padding: 5,
+    margin: 2,
+    marginBottom: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image:{
-    width: size*.5, 
-    height: size *.8,
+    width: size*.8, 
+    height: size*1.5,
     padding: 15,
     margin: 10,
-    backgroundColor: 'yellow'
   },
   title:{
-
+    fontWeight: 'bold',
+    fontSize: 12
   },
   options:{
-
-  },
-  rating:{
-
+    fontSize: 10
   },
   price:{
-
+    fontWeight: 'bold',
+    fontSize: 10
   }
 });
