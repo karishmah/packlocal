@@ -7,7 +7,6 @@ export default class SingleItem extends Component {
     super(props);
 
     this.state = {
-        images: this.props.source.image,
         index: 0
     }
   }
@@ -16,7 +15,7 @@ export default class SingleItem extends Component {
     return (
 <View>
     <TouchableOpacity style={styles.backArrow} onPress={this.props.onPress}>
-            <Entypo name="chevron-thin-left" size={30} color="white" />
+            <Entypo name="chevron-thin-left" size={30} color="#A9A9A9" />
     </TouchableOpacity>
     {/* <TouchableOpacity style={styles.cart} onPress={this.goPrev.bind(this)}>
             
@@ -41,6 +40,11 @@ export default class SingleItem extends Component {
 const size =  Dimensions.get('window').width;
 
 const styles = StyleSheet.create({
+backArrow:{
+    position: "absolute",
+    top: 45,
+    left: 20,
+},
 center: {
     alignItems: 'center',
 },
@@ -68,7 +72,7 @@ img: {
     backgroundColor: '#7480ff'
  },
  divider: {
-    top: 40,
+    top: 90,
     backgroundColor: '#7480ff',
     width: size,
     height: 10,

@@ -27,6 +27,10 @@ let bestSeller = [
     {
         title: 'Embroidered Handbag',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Bag+2.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: '3 more styles',
         rating: '3',
         price: '15.00'
@@ -34,6 +38,10 @@ let bestSeller = [
     {
         title: 'Beaded braclet',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Bracelet+2.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: '10 more styles',
         rating: '4.5',
         price: '55.00'
@@ -57,6 +65,10 @@ let essentials = [
         title: 'Beaded Bridal Shoes',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Shoes.png',
             'https://packlocal.s3-us-west-1.amazonaws.com/Shoes.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: '3 more styles',
         rating: '3',
         price: '15.00'
@@ -65,6 +77,10 @@ let essentials = [
         title: 'Lehenga Choli',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Bridal+Dress.png',
             'https://packlocal.s3-us-west-1.amazonaws.com/Bridal+Dress.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: 'Only this style',
         rating: '4.5',
         price: '320.00'
@@ -73,6 +89,10 @@ let essentials = [
         title: 'Sabyasachi Jewelry',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Bridal+Jewerly.png',
             'https://packlocal.s3-us-west-1.amazonaws.com/Bridal+Jewerly.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: '2 more styles',
         rating: '4',
         price: '130.00'
@@ -81,6 +101,10 @@ let essentials = [
         title: 'Sherwani',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Sherwani.png',
             'https://packlocal.s3-us-west-1.amazonaws.com/Sherwani.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: '3 more styles',
         rating: '4',
         price: '220.00'

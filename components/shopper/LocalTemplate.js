@@ -58,7 +58,7 @@ export default class LocalTemplate extends Component {
 const styles = StyleSheet.create({
   backArrow: {
     position: "absolute",
-    top: 50,
+    top: 45,
     left: 20,
   },
   header:{
