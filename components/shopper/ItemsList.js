@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, Dimensions, FlatList} from 'react-native';
+import { StyleSheet, Text, View, Image, Dimensions, FlatList, TouchableOpacity} from 'react-native';
 import { bundleDirectory } from 'expo-file-system';
 
 export default class ItemsList extends Component {
   constructor (props) {
     super(props);
+    this.state = {
+      itemSelected: {}
+    }
   }
 
+  
+
+
   render() {
+    const onPressItem = (item) => {
+      console.log(item)
+    };
+
     return (
       <View style={styles.list}>
         <FlatList
           data={this.props.source}
           renderItem={({item}) => (
+            <TouchableOpacity onPress={()=>{onPressItem(item)}}>     
             <View style={styles.container}>
-              <Image style={styles.image} source={{uri: item.image[0]}} />
-              <Text style={styles.title}>{item.title}</Text>
-              <Text style={styles.options}>{item.options}</Text>
-              <Text style={styles.price}> ${item.price}</Text>
+                <Image style={styles.image} source={{uri: item.image[0]}} />
+                <Text style={styles.title}>{item.title}</Text>
+                <Text style={styles.options}>{item.options}</Text>
+                <Text style={styles.price}> ${item.price}</Text>
             </View>
+            </TouchableOpacity> 
           )}
           keyExtractor={(item, index) => index}
           numColumns={numColumns}
