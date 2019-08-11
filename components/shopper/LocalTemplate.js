@@ -7,8 +7,18 @@ import { BorderlessButton } from 'react-native-gesture-handler';
 export default class LocalTemplate extends Component {
   constructor (props) {
     super(props);
+    this.state = {
+      itemSelected: {},
+      viewProduct: false,
+      previousPage: 'home'
+    }
   }
   
+  onPressItem = (item) => {
+    console.log(item);
+    this.setState({itemSelected: item, viewProduct: true});
+  };
+
   render() {
     return (
       <View>
@@ -16,9 +26,9 @@ export default class LocalTemplate extends Component {
         <Text style={styles.title}>{this.props.source.loc}</Text>
         <View style={styles.divider}></View>
         <Text style={styles.subtitle}> Best Sellers </Text>  
-        <ItemList source={bestSeller} />
+        <ItemList source={bestSeller} onPressItem={this.onPressItem}/>
         <Text style={styles.subtitle}> Indian Wedding Essentials </Text>  
-        <ItemList source={essentials} />
+        <ItemList source={essentials} onPressItem={this.onPressItem}/>
       </View>
     );
   }
@@ -49,5 +59,6 @@ const styles = StyleSheet.create({
     color: '#7480ff',
     fontSize: 25,
     fontWeight: 'bold',
+    marginBottom: 5
   }
 });

@@ -5,25 +5,15 @@ import { bundleDirectory } from 'expo-file-system';
 export default class ItemsList extends Component {
   constructor (props) {
     super(props);
-    this.state = {
-      itemSelected: {}
-    }
   }
 
-  
-
-
   render() {
-    const onPressItem = (item) => {
-      console.log(item)
-    };
-
     return (
       <View style={styles.list}>
         <FlatList
           data={this.props.source}
           renderItem={({item}) => (
-            <TouchableOpacity onPress={()=>{onPressItem(item)}}>     
+            <TouchableOpacity onPress={()=>{this.props.onPressItem(item)}}>     
             <View style={styles.container}>
                 <Image style={styles.image} source={{uri: item.image[0]}} />
                 <Text style={styles.title}>{item.title}</Text>
