@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View } from 'react-native';
-import { SearchBar } from 'react-native-elements';
+import { Platform, StyleSheet, Text, View, Dimensions } from 'react-native';
+import { SearchBar, Tile } from 'react-native-elements';
 import * as Font from 'expo-font';
 import Tiles from "react-native-tiles";
 
@@ -66,28 +66,45 @@ class Shopper extends Component {
           </Text>
         </View>
         <View style={{
+          top: '70%',
+          flexDirection: 'row',
           flex: 1,
           flexWrap: 'wrap',
-          flexDirection: 'row',
-          backgroundColor: '#ecf0f1'
-        }}>
+          justifyContent: 'space-around',
+          }}>
+          <View style={{
+            // height: 200,
+            // width: 100,
+            // padding: 10,
+          }}>
+            <Tile
+              imageSrc={require('../images/Paris.png')}
+              title="Paris"
+              width={width/2}
+              height={200}
+              contentContainerStyle={{ height: 50 }}>
+            </Tile>
+           </View>
+           <View style={{
+             // height: 200,
+             // width: 100,
+             // padding: 30,
+           }}>
+             <Tile
+               imageSrc={require('../images/Japan.png')}
+               title="Japan"
+               width={width/2}
+               height={200}
+               contentContainerStyle={{ height: 50 }}>
+             </Tile>
+            </View>
           <Tile
-            width={width/3}
-            featured
-            caption="1"
-          />
-          <Tile
-            width={width/3}
-            featured
-            caption="2"
-          />
-          <Tile
-            width={width/3}
+            width={width/2}
             featured
             caption="3"
           />
           <Tile
-            width={width/3}
+            width={width/2}
             featured
             caption="4"
           />
