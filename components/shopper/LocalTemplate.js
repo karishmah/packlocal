@@ -15,7 +15,7 @@ export default class LocalTemplate extends Component {
         <Image style={styles.header} source={{uri:this.props.source.image}} />
         <Text style={styles.title}>{this.props.source.loc}</Text>
         <Text style={styles.subtitle}> Best Sellers </Text>  
-        <ItemList source={list[0]} />
+        <ItemList source={list} />
       </View>
     );
   }
