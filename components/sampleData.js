@@ -45,6 +45,10 @@ let essentials = [
         title: 'Kundan Necklace',
         image: ['https://packlocal.s3-us-west-1.amazonaws.com/Jewerly+2.png',
                 'https://packlocal.s3-us-west-1.amazonaws.com/Necklace.png'],
+        descriptions: ['This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.',
+        'This is a handmaid necklace made in Mumbai from brass and copper. It can be worn for a traditional wedding or parties.'],
+        care: ['This can be hand-washed with water only or cleaned professionally at a jewelry shop.', 
+        'This can be hand-washed with water only or cleaned professionally at a jewelry shop.'],
         options: 'comes with earings',
         rating: '4',
         price: '295.00'
