@@ -4,7 +4,7 @@ import LocalTemplate from './components/shopper/LocalTemplate';
 import {locationData} from './components/sampleData';
 
 //home page 
-export default class App extends Component {
+export default class Location extends Component {
   render() {
     return (
       <View >
